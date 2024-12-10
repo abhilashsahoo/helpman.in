@@ -16,6 +16,7 @@ import {
   Plug,
   Hammer,
   Maximize,
+  AirVent 
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -79,11 +80,12 @@ const services = [
         href: "/services/carpentry",
       },
       {
-        name: "Area Extension",
-        icon: <Maximize className="w-6 h-6 text-[#E94560]" />,
-        description: "Expand your living spaces seamlessly",
-        href: "/services/area-extension",
+        name: "AC Services",
+        icon: <AirVent className="w-6 h-6 text-[#E94560]" />,
+        description: "AC installation and repair services.",
+        href: "/services/ac-services",
       },
+      
     ],
   },
 ];
@@ -174,7 +176,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Link
-              href="/contact"
+              href="/get-quote"
               className="px-8 py-3 bg-[#E94560] text-white rounded-lg text-sm font-medium hover:bg-[#d63d56] transition-colors"
             >
               Get Quote
@@ -252,7 +254,7 @@ const Header = () => {
             {/* Mobile CTA Buttons */}
             <div className="space-y-4 pt-6">
               <Link
-                href="/contact"
+                href="/get-quote"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full py-4 bg-[#E94560] text-white text-center rounded-lg font-medium hover:bg-[#d63d56] transition-colors"
               >

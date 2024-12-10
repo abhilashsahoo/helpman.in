@@ -25,3 +25,18 @@ body {
   50% { transform: translate(-2%, 1%); }
   75% { transform: translate(1%, -2%); }
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* For Firefox */
+select {
+  text-overflow: ellipsis;
+}
+
+/* For IE */
+select::-ms-expand {
+  display: none;
+}
